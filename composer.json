@@ -1,0 +1,44 @@
+{
+    "name": "webuni/php-single-file-components",
+    "description": "Doctrine extensions",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "twig/twig": "^1.38|^2.4|^3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Hasoň",
+            "email": "martin.hason@gmail.com"
+        },
+        {
+            "name": "Webuni s.r.o.",
+            "homepage": "https://www.webuni.cz"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Webuni\\SingleFileComponents\\": "php/src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webuni\\SingleFileComponents\\Tests\\": "php/tests"
+        }
+    },
+    "scripts": {
+        "cs": "./run cs",
+        "cs-check": "./run cs --dry-run",
+        "analyse": "./run analyse",
+        "tests": "./run tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
